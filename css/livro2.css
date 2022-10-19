@@ -4,12 +4,11 @@
   position: relative;
   z-index: 1;
   height: 100%;
-
 }
 
 .imagem2 {
   content: " ";
-  background-image: url(/img/pagina-direita.png);
+  background-image: url("../img/pagina-direita.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -19,7 +18,6 @@
   top: 13%;
 }
 
-.pagina-2{
+.pagina-2 {
   margin-left: 13%;
-  }
-
+}

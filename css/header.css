@@ -6,7 +6,7 @@
 
 .tudo {
   background-color: antiquewhite;
-  background-image: url("/img/fundo-pixel.png");
+  background-image: url("../img/fundo-pixel.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0rem;
@@ -32,7 +32,7 @@
   content: " "; /* Conteudo da div. */
   width: 90%; /* Largura da foto */
   height: 105%; /* Altura da foto  */
-  background-image: url(/img/borda-menu.png); /* Foto */
+  background-image: url("../img/borda-menu.png"); /* Foto */
   background-size: contain; /* Faz esticar no angulo X (maior da foto) */
   background-repeat: no-repeat;
   position: absolute; /* ?????? */

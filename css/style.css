@@ -1,6 +1,6 @@
-@import "/css/header.css";
-@import "/css/livro.css";
-@import "/css/livro2.css";
+@import "./css/header.css";
+@import "./css/livro.css";
+@import "./css/livro2.css";
 
 /* 
 font-family: "Rajdhani", Arial, sans-serif;

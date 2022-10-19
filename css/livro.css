@@ -9,7 +9,7 @@
 
 .imagem1 {
   content: " ";
-  background-image: url(/img/pagina-esquerda.png);
+  background-image: url("../img/pagina-esquerda.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
