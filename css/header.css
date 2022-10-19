@@ -4,6 +4,13 @@
   list-style: none;
 }
 
+@font-face {
+  font-family: "Pixel-Art";
+  src: url("../pixelart.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .tudo {
   background-color: antiquewhite;
   background-image: url("../img/fundo-pixel.png");
