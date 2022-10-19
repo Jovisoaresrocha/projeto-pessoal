@@ -1,0 +1,25 @@
+.pagina2 {
+  display: flex;
+  width: 25%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+
+}
+
+.imagem2 {
+  content: " ";
+  background-image: url(/img/pagina-direita.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  height: 92.1%;
+  width: 92.1%;
+  top: 13%;
+}
+
+.pagina-2{
+  margin-left: 13%;
+  }
+

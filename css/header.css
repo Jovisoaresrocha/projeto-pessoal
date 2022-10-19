@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.tudo {
+  background-color: antiquewhite;
+  background-image: url("/img/fundo-pixel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0rem;
+  color: #141414;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header {
+  width: 50%;
+}
+
+.primeira-caixa {
+  position: relative; /* Para linkar o absulute */
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.borda {
+  content: " "; /* Conteudo da div. */
+  width: 90%; /* Largura da foto */
+  height: 105%; /* Altura da foto  */
+  background-image: url(/img/borda-menu.png); /* Foto */
+  background-size: contain; /* Faz esticar no angulo X (maior da foto) */
+  background-repeat: no-repeat;
+  position: absolute; /* ?????? */
+  z-index: -1;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr; /* A foto só precisa de 250px */
+  min-height: 250px; /* é oque alinha as coisas no quadrado */
+  align-items: center; /* alinhar a foto e o texto no meio */
+}
+
+.foto-perfil {
+  justify-self: right; /* Grudar a foto na direita  */
+}
+
+.eu {
+  min-width: calc(137px * 1.2); /* O calculo é para aumentar um pouco a foto */
+  border: 1px solid #a66864; /* Borda minuscula em volta da foto */
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column; /* Deixar eles em coluna */
+  gap: 20px; /* Descolar o titulo da descricao */
+  padding-left: 15px; /* Descolar o texto da minha foto */
+  color: #eee6e9;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.descricao-titulo {
+  font-family: rajdhani, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.descricao-frase {
+  max-width: 20ch;
+  font-family: rajdhani, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 0px;
+}
+
+.caixinhas {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 100px;
+  top: 275px;
+}
+
+.caixinha1 {
+  width: 53px;
+}
+/* --------------------links-------------------------- */
+
+.links {
+  margin-top: 80px;
+  display: flex;
+  width: 510px;
+  height: 300px;
+  font-family: VT323;
+  font-weight: 700;
+  margin-left: 20px;
+  justify-content: center;
+  position: relative;
+  letter-spacing: 1.1px;
+}
+
+.lista-links li {
+  margin-top: 40px;
+  font-size: 1.4rem;
+  font-family: "Pixel-Art";
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+}
+a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.linkedin::before {
+  content: " ";
+  background-image: url("../img/linkedin.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 140px;
+  top: 35px;
+}
+
+.projetos::before {
+  content: " ";
+  background-image: url("../img/Projetos.png");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 140px;
+  top: 95px;
+}
+
+.github::before {
+  content: " ";
+  background-image: url("../img/github.png");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 140px;
+  top: 150px;
+}
