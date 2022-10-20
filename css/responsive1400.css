@@ -1,0 +1,153 @@
+@media (max-width: 1400px) {
+  .container {
+    width: 1000px;
+    height: 500px;
+  }
+  .person .minha-foto {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    margin-top: 30px;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  .box.person {
+    height: 45%;
+  }
+
+  .person .descricao {
+    max-width: 15ch;
+  }
+
+  .sobre {
+    font-size: 0.7rem;
+  }
+
+  /* Caixanihas de HTML, CSS E JS */
+
+  .caixinha {
+    display: flex;
+    top: -80px;
+    left: 160px;
+    height: 40px;
+  }
+
+  /* Botões de Linkedin, GitHub e Projetos */
+
+  ul {
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+  }
+
+  .linkedin,
+  .projetos,
+  .github,
+  li a {
+    font-size: 1.1rem;
+    gap: 0px;
+  }
+
+  .organizar {
+    gap: 15px;
+  }
+
+  .i-link img {
+    max-width: 25px;
+  }
+
+  /*  LIVRO  */
+
+  .livro {
+    width: 700px;
+    height: 450px;
+    padding: 17px 40px 36px 33px;
+  }
+
+  .livro .pagina {
+    font-size: 0.81rem;
+    gap: 10px;
+  }
+
+  .livro .pagina.esquerda {
+    padding-left: 31px;
+    padding-top: 23px;
+    padding-right: 20px;
+  }
+  .livro .pagina.direita {
+    padding-top: 18px;
+    padding-left: 38px;
+    padding-right: 15px;
+  }
+
+  .paragrafos {
+    gap: 8px;
+  }
+  .p1,
+  .p2 {
+    line-height: 12px;
+  }
+  .p3 {
+    line-height: 11.5px;
+  }
+  .video-game {
+    width: 110px;
+  }
+
+  /* PAGINA 2 CONTEUDO 😳 */
+  .divisaopagina {
+    padding-top: 7px;
+    row-gap: 3px;
+    margin-bottom: 20px;
+  }
+
+  .igast {
+    max-width: 110px;
+    justify-self: end;
+  }
+
+  .detalhe1 {
+    height: 60px;
+    width: 60px;
+    right: -20px;
+    top: -10px;
+  }
+
+  .gast {
+    padding-left: 5px;
+    padding-top: 14.5px;
+    width: 95%;
+  }
+  .gast2 {
+    padding-left: 5px;
+    padding-top: 7px;
+    width: 95%;
+  }
+
+  /* PAGINA 2 parte 2  */
+
+  .ihtml {
+    max-width: 110px;
+  }
+
+  .detalhe2 {
+    height: 60px;
+    width: 60px;
+    left: -10px;
+    top: -10px;
+  }
+
+  .htmlcss {
+    padding-top: 22px;
+    width: 95%;
+  }
+
+  .seta {
+    height: 30px;
+  }
+}
