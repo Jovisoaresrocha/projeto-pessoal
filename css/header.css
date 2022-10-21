@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-@media (max-width: 849328423px) {
+@media (max-width: 9482389423px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -42,7 +42,7 @@
   }
 
   .lado-direito {
-    width: 70%; /* Define o resto do site ao lado direito*/
+    width: 65%; /* Define o resto do site ao lado direito*/
     height: 100%; /*  queremos altura 100% */
     padding: 10px;
   }
@@ -162,7 +162,6 @@
     gap: 20px;
   }
 }
-
 /*  RESPONSIVIDADE DO HEADER  */
 
 @media (max-width: 1400px) {
@@ -176,7 +175,7 @@
     height: 75px;
     margin-top: 30px;
   }
-  
+
   .box.person {
     height: 45%;
   }
@@ -186,7 +185,6 @@
     font-weight: bold;
     margin-bottom: 0px;
   }
-
 
   .person .descricao {
     max-width: 15ch;
