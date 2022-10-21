@@ -15,6 +15,7 @@
 body {
   height: 100vh;
   display: grid;
+  background-color: #b4aeca;
   place-content: center;
   background-image: url(../img/fundo-pixel.png);
   background-size: cover;
