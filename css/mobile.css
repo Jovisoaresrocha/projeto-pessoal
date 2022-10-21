@@ -333,7 +333,8 @@ conteudo que eu preicso */
     background-image: url(../img/fundo-pixel.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: start;
+    background-position: center;
+    overflow-x: hidden;
     /* Usei o display grid para alinhar o site ao centro logo no body */
   }
 
@@ -343,6 +344,7 @@ conteudo que eu preicso */
     height: 100vh;
     display: grid;
     justify-items: center;
+
     /* na versão mobile os itens ficarão impilhados  */
   }
 
@@ -537,7 +539,8 @@ conteudo que eu preicso */
   }
 
   /* Coloquei ele assim para conseguir dividir a linha com o texto */
-  .adesivo { max-width: 20ch;
+  .adesivo {
+    max-width: 20ch;
     display: flex;
     justify-content: right;
   }
