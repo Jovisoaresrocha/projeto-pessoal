@@ -1,0 +1,318 @@
+@media (max-width: 850px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body {
+    height: 100vh;
+    justify-content: center;
+    background-color: #b4aeca;
+    place-content: center;
+    background-image: url(../img/fundo-pixel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+    /* Usei o display grid para alinhar o site ao centro logo no body */
+  }
+
+  .container {
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    /* na versão mobile os itens ficarão impilhados  */
+  }
+
+  .lado-esquerdo {
+    /* lado de cima  */
+    width: 40%; /* limitando a largura a 30% */
+    height: 100%; /* e a altura quero o site todo */
+    padding: 10px;
+  }
+
+  .lado-esquerdo .box {
+    width: 100%;
+    height: 70%; /* como o height do pai é 100%, queremos definir o tamanho da borda em 70% para esse filho */
+  }
+
+  .lado-direito,
+  .livro,
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* adicionando flex e centralizando o 
+conteudo que eu preicso */
+  }
+
+  .box.person {
+    /* adicionando o background a div */
+    /* como não tem conteudo, nao ocupa linhas */
+    background-image: url(../img/borda-menu.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 72px;
+  }
+
+  .person .minha-foto {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    /* definindo a altura e largura da foto com base na div */
+  }
+  .minha-foto img {
+    width: 100%;
+
+    /* A minha foto vira 100% do objeto pai */
+  }
+
+  .person .descricao {
+    color: #f2f2f2;
+    /* max-width: 140px; */
+    max-width: 20ch; /* Aqui podemos usar CH ou Pixel*/
+    overflow-wrap: break-word;
+    margin: 5px;
+    font-family: "rajdhani";
+    position: relative;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+
+  .sobre {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  /* Caixanihas de HTML, CSS E JS */
+
+  .menu {
+    /* Aqui estou colocando position relative da div que a caixinha vai tirar como base. */
+    position: relative;
+    width: 100%;
+    /* Width de 100% para existir alguma coisa ali e ter como ter uma base  */
+  }
+
+  .caixinha {
+    display: flex;
+    top: -85px;
+    left: 200px;
+    height: 55px;
+  }
+  .caixinha img {
+    height: 100%;
+    /* aqui ele está 100% do container pai que é 70px */
+  }
+
+  /* Botões de Linkedin, GitHub e Projetos */
+
+  .lista {
+    /* O UL sendo flex vai jogar os itens ao centro do quadrado. */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    gap: 20px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkedin li a,
+  .projetos li a,
+  .github li a {
+    /* Usando o align-itens vai alinhar o texto aos icones */
+    display: flex;
+    font-family: "rajdhani";
+    color: #3a181a;
+    font-weight: bold;
+    font-size: 1.1rem;
+    gap: 1px;
+    align-items: center;
+    text-shadow: 2px 2px 10px #0000002d;
+  }
+
+  .organizar {
+    /* .organizar foi feito meramente para alinhar os icones e links ao centro usando o baseline */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 30px;
+  }
+
+  /*  LIVRO  */
+
+  .lado-direito {
+    /* lado de baixo  */
+    width: 70%; /* Define o resto do site ao lado direito*/
+    height: 50%; /*  queremos altura 100% */
+    padding: 10px;
+  }
+
+  .livro {
+    width: 950px;
+    height: 675px;
+    padding: 0px;
+    background-image: url(../img/LivroComission.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .livro .pagina {
+    width: 50%; /* aqui estou dividindo o livro em 2 paginas */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    /* padding para conseguir alinhar o conteudo as normas do caderno */
+    font-size: 1rem;
+    font-family: "Pixel-Art";
+    gap: 16px;
+    color: #3a181a;
+    --line-height: 16.4px; /* Variavel da altura da linha */
+  }
+
+  .livro .pagina.esquerda {
+    padding-left: 60px;
+    padding-top: 36px;
+    padding-right: 32px;
+  }
+  .livro .pagina.direita {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+  /* Padding que faltou na .pagina.esquerda pois a distancia da direita para a esquerda são diferentes, a arte não é simetrica*/
+
+  .paragrafos {
+    flex-direction: column;
+    gap: 8px;
+    /* Gap EXATO para cada texto se enquadradar certinho na linha do cardeno */
+  }
+
+  .paragrafos .p1 {
+    margin-top: 6px;
+    line-height: 11.4px;
+  }
+  .paragrafos .p2 {
+    margin-top: 2px;
+    line-height: 11.5px;
+  }
+
+  .adesivo .p3 {
+    margin-top: 6px;
+    line-height: 11.2px;
+  }
+
+  /* Coloquei ele assim para conseguir dividir a linha com o texto */
+  .adesivo {
+    display: flex;
+    justify-content: right;
+  }
+
+  .video-game {
+    width: 100px;
+    align-items: flex-end;
+  }
+
+  /* PAGINA 2 CONTEUDO 😳 */
+  .divisaopagina {
+    padding-top: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*  cortei em 2 colunas para arrumar melhor */
+    height: 18%;
+    /* Deixando 32% para cada certificado */
+    row-gap: 0px;
+    position: relative;
+    /* Relative por conta dos adesivos */
+    margin-bottom: 8px;
+  }
+  .titulo2 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  .igast {
+    max-width: 110px;
+    /* Aqui estou arrumando a coluna/linha no qual a imagem do certificado irá ficar:  */
+    grid-row: 1/4;
+    grid-column: 2/4;
+  }
+
+  .detalhe1 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: -10px;
+    top: 7px;
+    /* Apenas um detalhe bonitinho 
+  Por mais que eu esteja evitando usar absolute, alguns detalhes ficam mais bonitinhos com*/
+  }
+
+  .gast {
+    line-height: 11.2px;
+    padding-left: 10px;
+    padding-top: 12px;
+    width: 95%;
+  }
+
+  /* Eu dividi em .gast e .gast2 para ficar mais facil de alinhar texto a linha*/
+  .gast2 {
+    line-height: 11.2px;
+    padding-left: 10px;
+    padding-top: 0px;
+    width: 95%;
+  }
+
+  /* =---------------------------------------= */
+
+  .ihtml {
+    /* Aqui estou arrumando a coluna/linha no qual a imagem do certificado irá ficar:  */
+    max-width: 100px;
+    grid-row: 1/4;
+    grid-column: 1/2;
+    margin-left: 10px;
+  }
+
+  .detalhe2 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 0px;
+    top: -5px;
+    /* Apenas um detalhe bonitinho 
+  Por mais que eu esteja evitando usar absolute, alguns detalhes ficam mais bonitinhos com*/
+  }
+
+  .htmlcss {
+    padding-top: 18px;
+    line-height: 11.2px;
+  }
+
+  /* ------------ */
+
+  .d-seta {
+    display: flex;
+    flex-direction: row-reverse;
+    /* usei o row-reverse para colocar a seta no fim */
+    width: 100%;
+  }
+  .seta {
+    height: 30px;
+  }
+
+  .seta:hover {
+    border: 2px transparent solid;
+  }
+  /* apenas um detalhe para dar um sutil detalhe de botao  */
+}

@@ -1,0 +1,148 @@
+
+/*  LIVRO  */
+
+.livro {
+  width: 950px;
+  height: 675px;
+  padding: 43px 53px 69px 40px;
+  background-image: url(../img/LivroComission.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.livro .pagina {
+  width: 50%; /* aqui estou dividindo o livro em 2 paginas */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding para conseguir alinhar o conteudo as normas do caderno */
+  font-size: 1rem;
+  font-family: "Pixel-Art";
+  gap: 16px;
+  color: #3a181a;
+  --line-height: 16.4px; /* Variavel da altura da linha */
+}
+
+.livro .pagina.esquerda {
+  padding-left: 40px;
+  padding-top: 31px;
+  padding-right: 32px;
+}
+.livro .pagina.direita {
+  padding-top: 31px;
+  padding-left: 58px;
+  padding-right: 10px;
+}
+/* Padding que faltou na .pagina.esquerda pois a distancia da direita para a esquerda são diferentes, a arte não é simetrica*/
+
+.paragrafos {
+  flex-direction: column;
+  gap: 15px;
+  /* Gap EXATO para cada texto se enquadradar certinho na linha do cardeno */
+}
+
+.p1,
+.p2,
+.p3 {
+  line-height: calc(var(--line-height) * 1);
+}
+
+/* Coloquei ele assim para conseguir dividir a linha com o texto */
+.adesivo {
+  display: flex;
+  justify-content: right;
+}
+
+.video-game {
+  width: 130px;
+  align-items: flex-end;
+}
+
+/* PAGINA 2 CONTEUDO 😳 */
+.divisaopagina {
+  padding-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*  cortei em 2 colunas para arrumar melhor */
+  height: 32%;
+  /* Deixando 32% para cada certificado */
+  row-gap: 13px;
+  position: relative;
+  /* Relative por conta dos adesivos */
+  margin-bottom: 20px;
+}
+
+.igast {
+  max-width: 150px;
+  /* Aqui estou arrumando a coluna/linha no qual a imagem do certificado irá ficar:  */
+  grid-row: 1/4;
+  grid-column: 2/4;
+}
+
+.detalhe1 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: -10px;
+  top: -10px;
+  /* Apenas um detalhe bonitinho 
+  Por mais que eu esteja evitando usar absolute, alguns detalhes ficam mais bonitinhos com*/
+}
+
+.gast {
+  padding-left: 10px;
+  padding-top: 12px;
+  width: 95%;
+}
+
+/* Eu dividi em .gast e .gast2 para ficar mais facil de alinhar texto a linha*/
+.gast2 {
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 95%;
+}
+
+/* =---------------------------------------= */
+
+.ihtml {
+  /* Aqui estou arrumando a coluna/linha no qual a imagem do certificado irá ficar:  */
+  max-width: 150px;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  margin-left: 10px;
+}
+
+.detalhe2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: -22px;
+  top: -13px;
+  /* Apenas um detalhe bonitinho 
+  Por mais que eu esteja evitando usar absolute, alguns detalhes ficam mais bonitinhos com*/
+}
+
+.htmlcss {
+  padding-top: 14px;
+  width: 95%;
+  /* coloquei 95% para alinhar a imagem */
+}
+
+/* ------------ */
+
+.d-seta {
+  display: flex;
+  flex-direction: row-reverse;
+  /* usei o row-reverse para colocar a seta no fim */
+  width: 100%;
+}
+.seta {
+  height: 40px;
+}
+
+.seta:hover {
+  border: 2px transparent solid;
+}
+/* apenas um detalhe para dar um sutil detalhe de botao  */
