@@ -54,9 +54,10 @@ conteudo que eu preicso */
     /* como não tem conteudo, nao ocupa linhas */
     background-image: url(../img/borda-menu.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 72px;
+
   }
 
   .person .minha-foto {
@@ -172,7 +173,6 @@ conteudo que eu preicso */
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: top;
     /* padding para conseguir alinhar o conteudo as normas do caderno */
     font-size: 1rem;
     font-family: "Pixel-Art";
@@ -326,15 +326,15 @@ conteudo que eu preicso */
   }
 
   body {
-    height: 120vh;
+    height: 100vh;
     justify-content: center;
     background-color: #b4aeca;
     place-content: center;
     background-image: url(../img/fundo-pixel.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden;
+    background-position: initial;
+    overflow: hidden;
     /* Usei o display grid para alinhar o site ao centro logo no body */
   }
 
@@ -377,17 +377,17 @@ conteudo que eu preicso */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-bottom: 72px;
+    padding-bottom: 50px;
   }
 
   .person .minha-foto {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     margin-top: 20px;
     /* definindo a altura e largura da foto com base na div */
   }
   .minha-foto img {
-    width: 100%;
+    width: 120%;
 
     /* A minha foto vira 100% do objeto pai */
   }
@@ -395,7 +395,7 @@ conteudo que eu preicso */
   .person .descricao {
     color: #f2f2f2;
     /* max-width: 140px; */
-    max-width: 20ch; /* Aqui podemos usar CH ou Pixel*/
+    max-width: 15ch; /* Aqui podemos usar CH ou Pixel*/
     overflow-wrap: break-word;
     margin: 5px;
     font-family: "rajdhani";
@@ -409,7 +409,7 @@ conteudo que eu preicso */
   }
 
   .sobre {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-top: 5px;
   }
 
@@ -480,7 +480,7 @@ conteudo que eu preicso */
 
   .livro {
     width: 950px;
-    height: 480px;
+    height: 400px;
     padding: 0px;
     background-image: url(../img/pagina-esquerda.png);
     background-position: top;
@@ -493,7 +493,7 @@ conteudo que eu preicso */
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: top;
+
     /* padding para conseguir alinhar o conteudo as normas do caderno */
     font-size: 1rem;
     font-family: "Pixel-Art";
@@ -502,61 +502,33 @@ conteudo que eu preicso */
     --line-height: 16.4px; /* Variavel da altura da linha */
   }
 
-  .livro .pagina.esquerda {
-    padding-left: 60px;
-    padding-top: 36px;
-    padding-right: 32px;
+  .livro .pagina.esquerda,.tituloe, .p1, .p2, .adesivo, .p3, .video-game {
+    display: none;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px
   }
   .livro .pagina.direita {
-    display: none;
     padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 50px;
+    padding-left: 44px;
+    padding-right: 25px;
+    padding-bottom: 25px;
   }
   /* Padding que faltou na .pagina.esquerda pois a distancia da direita para a esquerda são diferentes, a arte não é simetrica*/
 
-  .paragrafos {
-    flex-direction: column;
-    gap: 8px;
-    /* Gap EXATO para cada texto se enquadradar certinho na linha do cardeno */
-  }
-
-  .paragrafos .p1 {
-    max-width: 20ch;
-    margin-top: 6px;
-    line-height: 11.4px;
-  }
-  .paragrafos .p2 {
-    max-width: 20ch;
-    margin-top: 2px;
-    line-height: 11.5px;
-  }
-
-  .adesivo .p3 {
-    max-width: 20ch;
-    margin-top: 6px;
-    line-height: 11.2px;
-  }
-
-  /* Coloquei ele assim para conseguir dividir a linha com o texto */
-  .adesivo {
-    max-width: 20ch;
-    display: flex;
-    justify-content: right;
-  }
-
-  .video-game {
-    width: 100px;
-    align-items: flex-end;
-  }
 
   /* PAGINA 2 CONTEUDO 😳 */
+
+  .pagina.direita{
+    width: 300px;
+  }
   .divisaopagina {
     padding-top: 7px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*  cortei em 2 colunas para arrumar melhor */
-    height: 18%;
+    height: 30%;
     /* Deixando 32% para cada certificado */
     row-gap: 0px;
     position: relative;
@@ -580,15 +552,15 @@ conteudo que eu preicso */
     height: 50px;
     width: 50px;
     right: -10px;
-    top: 7px;
+    top: -4px;
     /* Apenas um detalhe bonitinho 
   Por mais que eu esteja evitando usar absolute, alguns detalhes ficam mais bonitinhos com*/
   }
 
   .gast {
-    line-height: 11.2px;
+    line-height: 11px;
     padding-left: 10px;
-    padding-top: 12px;
+    padding-top: 14px;
     width: 95%;
   }
 
@@ -596,7 +568,7 @@ conteudo que eu preicso */
   .gast2 {
     line-height: 11.2px;
     padding-left: 10px;
-    padding-top: 0px;
+    padding-top: 5.6px;
     width: 95%;
   }
 
@@ -607,6 +579,7 @@ conteudo que eu preicso */
     max-width: 100px;
     grid-row: 1/4;
     grid-column: 1/2;
+    row-gap: 10px;
     margin-left: 10px;
   }
 
