@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+i-link{
+  font-family: "poppins";
+}
+
 @media (max-width: 432423432px) {
   .quadro {
     width: 100%;
