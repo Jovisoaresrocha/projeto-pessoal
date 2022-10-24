@@ -1,105 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+  <title>Portfolio - João Vitor</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos do João Vitor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&family=VT323&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/projetos.css">
-
-  <!--  -->
 </head>
 
-<div class="container">
-  <!-- Literalmente o site todo  -->
+<body>
+  <!-- Todo este arquivo será comentado para melhor analise do mesmo
+  Como eu estou aprendendo HTML e CSS eu pretendo descrever "tudo" para não me perder
+  Espero que você também consiga entender oque eu fiz ❤ -->
 
-  <div class="lado-esquerdo">
-    <!-- Irei dividir o site em 2 lados, o lado esquerdo e o direito -->
-    <div class="box person">
-      <!-- Aqui fica o painel junto com o background -->
-      <div class="minha-foto">
-        <!-- A div da foto para fazer ela ocupar o tamanho de 100% da div e facilitar o dimensionamento -->
-        <img src="./img/eu.png">
-      </div> <!-- Fechando a div da foto -->
-      <div class="descricao">
-        <!-- Aqui vai ser a caixa que vai conter o Titulo e a Descrição do meu texto de apresentação  -->
-        <h1 class="titulo"> Olá mundo!</h1>
-        <p class="sobre"> Eu sou o João Vitor, estou estudando sobre ADS e pretendo me especializar em front end.</p>
-        <div class="caixinha">
-          <img src="./img/caixinha-css.png" alt="">
-          <img src="./img/caixinha-html.png" alt="">
-          <img src="./img/caixinha-js.png" alt="">
+  <div class="container">
+    <!-- Literalmente o site todo  -->
+
+    <div class="lado-esquerdo">
+      <!-- Irei dividir o site em 2 lados, o lado esquerdo e o direito -->
+      <div class="box person">
+        <!-- Aqui fica o painel junto com o background -->
+        <div class="minha-foto">
+          <!-- A div da foto para fazer ela ocupar o tamanho de 100% da div e facilitar o dimensionamento -->
+          <img src="./img/eu.png">
+        </div> <!-- Fechando a div da foto -->
+        <div class="descricao">
+          <!-- Aqui vai ser a caixa que vai conter o Titulo e a Descrição do meu texto de apresentação  -->
+          <h1 class="titulo"> Olá mundo!</h1>
+          <p class="sobre"> Eu sou o João Vitor, estou estudando sobre ADS e pretendo me especializar em front end.</p>
+          <div class="caixinha">
+            <img src="./img/caixinha-css.png" alt="">
+            <img src="./img/caixinha-html.png" alt="">
+            <img src="./img/caixinha-js.png" alt="">
+          </div>
+        </div> <!-- Fechando a descrição -->
+      </div> <!-- Fechando o painel  -->
+      <div class="menu">
+        <div class="box links">
+
+
+          <div class="lista">
+            <ul class="organizar">
+              <li class="certificados ">
+                <a class="i-link" href="./index.html"> <img src="./img/bolsa.png" alt=""> Certificados </a>
+              </li>
+              <li class="projetos sublinhado">
+                <a class="i-link" href="./projetos.html"> <img src="./img/pro-jetos.png" alt=""> Projetos</a>
+              </li>
+
+
+              <li class="linkedin">
+                <a class="i-link" href="https://www.linkedin.com/in/joao-vitor-soares-rocha/" target="_blank"> <img src="./img/linkedin.svg" alt="">Linkedin</a>
+              </li>
+
+
+              <li class="github">
+                <a class="i-link" href="https://github.com/JoViSoRo" target="_blank"> <img src="./img/github.png" alt="">Github</a>
+              </li>
+
+            </ul>
+
+          </div>
         </div>
-      </div> <!-- Fechando a descrição -->
-    </div> <!-- Fechando o painel  -->
-    <div class="menu">
-      <div class="box links">
+      </div> <!-- Os links -->
+    </div> <!-- Fim do lado esquerdo. -->
 
+    <div class="lado-direito">
+      <!-- Inicio lado direito -->
+      <div class="quadro">
+        <!-- Inicio do livro -->
+        <div class="todosprojetos">
+          <!-- conteudo da pagina esquerda.  -->
+          <h1 class="tituloprojeto">Projetos </h1>
+          <p class="paragrafosprojeto"> Ainda não possuo muitos projetos, mas, espero que você goste deles</p>
 
-        <div class="lista">
-          <ul class="organizar">
-            <li class="certificados ">
-              <a class="i-link" href="./index.html"> <img src="./img/bolsa.png" alt=""> Certificados </a>
-            </li>
-            
-            <li class="projetos sublinhado">
-              <a class="i-link" href="./projetos.html"> <img src="./img/pro-jetos.png" alt=""> Projetos</a>
-            </li>
+          <div class="portfolioprojetos">
+            <a href="https://jovisoro.github.io/mini-portfolio/"><img class="moldura" src="./img/moldura-quadro-mini.png"></a>
+            <a href="https://jovisoro.github.io/Portfolio-pessoal/"><img class="moldura" src="./img/moldura-quadro-grand.png"></a>
+            <p class="nomeprojeto">Mini portfolio</p>
+            <p class="nomeprojeto">Portfolio "Formal"</p>
+            <img class="moldura" src="./img/moldura-quadro.png" alt="">
+            <img class="moldura" src="./img/moldura-quadro.png" alt="">
+            <p class="nomeprojeto"> Ainda não existe </p>
+            <p class="nomeprojeto"> Ainda não existe </p>
 
+            <p class="footer">esse site pode ser considerado um projeto? 😳</p>
 
-            <li class="linkedin">
-              <a class="i-link" href="https://www.linkedin.com/in/joao-vitor-soares-rocha/" target="_blank"> <img src="./img/linkedin.svg" alt="">Linkedin</a>
-            </li>
+          </div>
 
+        </div> <!-- Final da primeira pagina  -->
 
-            <li class="github">
-              <a class="i-link" href="https://github.com/JoViSoRo" target="_blank"> <img src="./img/github.png" alt="">Github</a>
-            </li>
-
-          </ul>
-
-        </div>
-      </div>
-    </div> <!-- Os links -->
-  </div> <!-- Fim do lado esquerdo. -->
-  <div class="lado-direito">
-    <!-- Inicio lado direito -->
-    <div class="quadro">
-      <!-- Inicio do livro -->
-      <div class="todosprojetos">
-        <!-- conteudo da pagina esquerda.  -->
-        <h1 class="tituloprojeto">Projetos </h1>
-        <p class="paragrafosprojeto"> Ainda não possuo muitos projetos, mas, espero que você goste deles</p>
-
-        <div class="portfolioprojetos">
-          <a href="https://jovisoro.github.io/mini-portfolio/"><img class="moldura" src="./img/moldura-quadro-mini.png"></a>
-          <a href="https://jovisoro.github.io/Portfolio-pessoal/"><img class="moldura" src="./img/moldura-quadro-grand.png"></a>
-          <p class="nomeprojeto">Mini portfolio</p>
-          <p class="nomeprojeto">Portfolio "Formal"</p>
-          <img class="moldura" src="./img/moldura-quadro.png" alt="">
-          <img class="moldura" src="./img/moldura-quadro.png" alt="">
-          <p class="nomeprojeto"> Ainda não existe </p>
-          <p class="nomeprojeto"> Ainda não existe </p>
-
-          <p class="footer">esse site pode ser considerado um projeto? 😳</p>
-
-        </div>
-
-      </div> <!-- Final da primeira pagina  -->
-
-      <!-- Inicio da segunda pagina -->
-      <div class="pagina direita">
+        <!-- Inicio da segunda pagina -->
       </div>
     </div>
-  </div>
-</div>
-</div> <!-- Fechamento do container, final do site ❤  -->
-
-<body>
-
+  </div> <!-- Fechamento do container, final do site ❤  -->
 </body>
 
 </html>
