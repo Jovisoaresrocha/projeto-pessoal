@@ -5,297 +5,179 @@
   font-style: normal;
 }
 
-@media (max-width: 9482389423px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
-  body {
-    height: 100vh;
-    display: grid;
-    background-color: #b4aeca;
-    place-content: center;
-    background-image: url(../img/fundo-pixel.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: start;
-    /* Usei o display grid para alinhar o site ao centro logo no body */
-  }
+body {
+  height: 100vh;
+  display: grid;
+  background-color: #b4aeca;
+  place-content: center;
+  background-image: url(../img/fundo-pixel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: start;
+  /* Usei o display grid para alinhar o site ao centro logo no body */
+}
 
-  .container {
-    width: 1500px;
-    height: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* aqui eu criei 2 "colunas" no site em formato de linha
+.container {
+  width: 1500px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* aqui eu criei 2 "colunas" no site em formato de linha
   O lado esquerdo (menu) e o direito (livro) */
-  }
+}
 
-  .lado-esquerdo {
-    width: 30%; /* limitando a largura a 30% */
-    height: 100%; /* e a altura quero o site todo */
-    padding: 10px;
-  }
+.lado-esquerdo {
+  width: 30%; /* limitando a largura a 30% */
+  height: 100%; /* e a altura quero o site todo */
+  padding: 10px;
+}
 
-  .lado-direito {
-    width: 65%; /* Define o resto do site ao lado direito*/
-    height: 100%; /*  queremos altura 100% */
-    padding: 10px;
-  }
+.lado-direito {
+  width: 65%; /* Define o resto do site ao lado direito*/
+  height: 100%; /*  queremos altura 100% */
+  padding: 10px;
+}
 
-  .lado-esquerdo .box {
-    width: 100%;
-    height: 40%; /* como o height do pai é 100%, queremos colocar apenas 40% para esse filho */
-  }
+.lado-esquerdo .box {
+  width: 100%;
+  height: 40%; /* como o height do pai é 100%, queremos colocar apenas 40% para esse filho */
+}
 
-  .lado-direito,
-  .livro,
-  .box,
-  .paragrafos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* adicionando flex e centralizando o 
+.lado-direito,
+.livro,
+.paragrafos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* adicionando flex e centralizando o 
   conteudo que eu preicso */
-  }
-
-  .box.person {
-    /* adicionando o background a div */
-    /* como não tem conteudo, nao ocupa linhas */
-    background-image: url(../img/borda-menu.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-bottom: 72px;
-  }
-
-  .person .minha-foto {
-    width: 140px;
-    height: 140px;
-    margin: 10px;
-    /* definindo a altura e largura da foto com base na div */
-  }
-  .minha-foto img {
-    width: 100%;
-
-    /* A minha foto vira 100% do objeto pai */
-  }
-
-  .person .descricao {
-    color: #f2f2f2;
-    /* max-width: 140px; */
-    max-width: 20ch; /* Aqui podemos usar CH ou Pixel*/
-    overflow-wrap: break-word;
-    margin: 5px;
-    font-family: "rajdhani";
-    position: relative;
-  }
-
-  .titulo {
-    font-size: 1.7rem;
-    font-weight: bold;
-  }
-
-  .sobre {
-    font-size: 15px;
-    margin-top: 10px;
-  }
-
-  /* Caixanihas de HTML, CSS E JS */
-
-  .menu {
-    /* Aqui estou colocando position relative da div que a caixinha vai tirar como base. */
-    position: relative;
-    width: 100%;
-    /* Width de 100% para existir alguma coisa ali e ter como ter uma base  */
-  }
-
-  .caixinha {
-    position: absolute;
-    top: -100px;
-    left: 240px;
-    height: 60px;
-  }
-  .caixinha img {
-    height: 100%;
-    /* aqui ele está 100% do container pai que é 70px */
-  }
-
-  /* Botões de Linkedin, GitHub e Projetos */
-
-  ul {
-    /* O UL sendo flex vai jogar os itens ao centro do quadrado. */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    gap: 20px;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .linkedin,
-  .projetos,
-  .github,
-  li a {
-    /* Usando o align-itens vai alinhar o texto aos icones */
-    display: flex;
-    font-family: "rajdhani";
-    color: #3a181a;
-    font-weight: bold;
-    font-size: 1.3rem;
-    gap: 10px;
-    align-items: center;
-    text-shadow: 2px 2px 10px #0000002d;
-  }
-
-  .organizar {
-    /* .organizar foi feito meramente para alinhar os icones e links ao centro usando o baseline */
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 20px;
-  }
 }
-/*  RESPONSIVIDADE DO HEADER  */
 
-@media (max-width: 1400px) {
-  .container {
-    width: 1000px;
-    height: 500px;
-  }
-  .person .minha-foto {
-    display: flex;
-    width: 75px;
-    height: 75px;
-    margin-top: 30px;
-  }
+.box.person {
+  /* adicionando o background a div */
+  /* como não tem conteudo, nao ocupa linhas */
+  background-image: url(../img/borda-menu.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
 
-  .box.person {
-    height: 45%;
-  }
+.person .minha-foto {
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+  align-self: flex-start;
+margin-top: 40px;
+  /* definindo a altura e largura da foto com base na div */
+}
+.minha-foto img {
+  width: 100%;
+  align-self: center;
+  /* A minha foto vira 100% do objeto pai */
+}
 
-  .titulo {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0px;
-  }
+.person .descricao {
+  color: #f2f2f2;
+  /* max-width: 140px; */
+  max-width: 20ch; /* Aqui podemos usar CH ou Pixel*/
+  overflow-wrap: break-word;
+  margin: 5px;
+  font-family: "rajdhani";
+  position: relative;
+  margin-top: 30px;
+}
 
-  .person .descricao {
-    max-width: 15ch;
-  }
+.titulo {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
 
-  .sobre {
-    font-size: 0.7rem;
-  }
+.sobre {
+  font-size: 15px;
+  margin-top: 10px;
+}
 
-  /* Caixanihas de HTML, CSS E JS */
+/* Caixanihas de HTML, CSS E JS */
 
-  .caixinha {
-    display: flex;
-    top: -80px;
-    left: 160px;
-    height: 40px;
-  }
+.menu {
+  /* Aqui estou colocando position relative da div que a caixinha vai tirar como base. */
+  position: relative;
+  width: 100%;
+  /* Width de 100% para existir alguma coisa ali e ter como ter uma base  */
+}
 
-  /* Botões de Linkedin, GitHub e Projetos */
+.caixinha {
+  display: flex;
+  height: 60px;
+  margin-top: 40px;
+  gap: 5px;
+}
+.caixinha img {
+  height: 100%;
+  /* aqui ele está 100% do container pai que é 60px */
+}
 
-  ul {
-    width: 100%;
-    height: 100px;
-    padding: 0px;
-  }
+/* Botões de Linkedin, GitHub e Projetos */
 
-  .linkedin,
-  .projetos,
-  .github,
-  li a {
-    font-size: 1.1rem;
-    gap: 0px;
-  }
+ul {
+  /* O UL sendo flex vai jogar os itens ao centro do quadrado. */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  gap: 20px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+}
 
-  .organizar {
-    gap: 15px;
-  }
+.linkedin,
+.projetos,
+.github,
+.certificados,
+li a {
+  /* Usando o align-itens vai alinhar o texto aos icones */
+  display: flex;
+  font-family: "rajdhani";
+  color: #3a181a;
+  font-weight: bold;
+  font-size: 1.3rem;
+  gap: 10px;
+  align-items: center;
+  text-shadow: 2px 2px 10px #0000002d;
+}
 
-  .i-link img {
-    max-width: 25px;
+.i-link img {
+  max-width: 35px;
+}
+.i-link:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+  50% {
+    text-shadow: 0 0 6px #865355, 0px 0 12px #35191b;
   }
 }
 
-@media (max-width: 1000px) {
-  .container {
-    width: 800px;
-    height: 400px;
-  }
-  .person .minha-foto {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    margin-top: 40px;
-  }
+.organizar {
+  /* .organizar foi feito meramente para alinhar os icones e links ao centro usando o baseline */
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
 
-  .titulo {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-bottom: 0px;
-  }
-
-  .titulo2 {
-    font-size: 0.9rem;
-    margin-top: 13px;
-  }
-
-  .box.person {
-    height: 40%;
-  }
-
-  .person .descricao {
-    max-width: 12ch;
-  }
-
-  .sobre {
-    margin-top: 1px;
-    font-size: 0.6rem;
-  }
-
-  /* Caixanihas de HTML, CSS E JS */
-
-  .caixinha {
-    display: flex;
-    top: -53px;
-    left: 130px;
-    height: 30px;
-  }
-
-  /* Botões de Linkedin, GitHub e Projetos */
-
-  ul {
-    width: 100%;
-    height: 100px;
-    padding: 0px;
-  }
-
-  .linkedin,
-  .projetos,
-  .github,
-  li a {
-    font-size: 0.9rem;
-    gap: 0px;
-  }
-
-  .organizar {
-    gap: 10px;
-  }
-
-  .i-link img {
-    max-width: 20px;
-    margin-right: 5px;
-  }
+.sublinhado {
+  text-decoration: underline 3px;
 }
