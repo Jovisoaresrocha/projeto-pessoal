@@ -77,7 +77,7 @@ body {
   height: 30%;
   margin: 10px;
   align-self: flex-start;
-margin-top: 40px;
+  margin-top: 40px;
   /* definindo a altura e largura da foto com base na div */
 }
 .minha-foto img {
@@ -129,7 +129,7 @@ margin-top: 40px;
 
 /* Botões de Linkedin, GitHub e Projetos */
 
-ul {
+.lista {
   /* O UL sendo flex vai jogar os itens ao centro do quadrado. */
   display: flex;
   flex-direction: column;
@@ -141,11 +141,7 @@ ul {
   justify-content: center;
 }
 
-.linkedin,
-.projetos,
-.github,
-.certificados,
-li a {
+.i-link {
   /* Usando o align-itens vai alinhar o texto aos icones */
   display: flex;
   font-family: "rajdhani";
@@ -163,7 +159,6 @@ li a {
 .i-link:hover {
   animation: pulsate 1s ease-in-out;
 }
-
 @keyframes pulsate {
   50% {
     text-shadow: 0 0 6px #865355, 0px 0 12px #35191b;
