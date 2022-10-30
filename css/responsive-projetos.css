@@ -1,0 +1,77 @@
+@media (max-width: 1350px) {
+  .lado-esquerdo {
+    width: 25%; /* antes era 30% */
+  }
+
+  .lado-direito {
+    width: 60%; /* antes era 65% */
+  }
+
+  .person .minha-foto {
+    width: 28%; /* antes era 30% */
+    height: 25%; /* antes era 30% */
+    margin: 0px; /* antes era 10px */
+    margin-top: 60px; /* antes era 40px */
+  }
+
+  .person .descricao {
+    max-width: 15ch; /* antes era 20ch */
+  }
+
+  .titulo {
+    margin-top: 10px; /* antes não tinha */
+    font-size: 1.3rem; /* antes era 1.7rem */
+  }
+
+  .sobre {
+    font-size: 0.8rem; /* antes era 0.93rem */
+  }
+
+  /* Caixanihas de HTML, CSS E JS */
+
+  .caixinha {
+    height: 40px; /* antes era 60px */
+    margin-top: -8px; /* antes era 20px */
+    margin-left: 40px; /* antes era inexistente */
+  }
+
+  /* Botões de Linkedin, GitHub e Projetos */
+
+  .lista {
+    width: 80%; /* antes era 100% */
+    height: 150px; /* antes era 200px */
+  }
+
+  .organizar {
+    gap: 10px; /* antes era de 20px */
+  }
+
+  .i-link {
+    font-size: 1.125rem; /* antes era de 1.3rem */
+  }
+
+  .i-link img {
+    max-width: 30px; /* antes era de 35px */
+  }
+
+  /* Quadro -------------------------------------------------- */
+
+  .quadro {
+    width: 850px; /* antes era 950px */
+    height: 606px; /* antes era 675x */
+    padding: 19px 57px 22px 58px; /* antes era 43px/53px/69px/40px */
+  }
+
+  .portfolioprojetos {
+    margin-top: 10px; /* antes era 30 px */
+    gap: 5px; /* antes era 7px */
+  }
+  .portfolioprojetos img {
+    width: 60%; /* antes era 70% */
+  }
+
+  .footer {
+    margin-top: 50px; /* antes era 30% */
+    font-size: 1rem; /* antes era 1.3rem */
+  }
+}

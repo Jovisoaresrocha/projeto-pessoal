@@ -103,7 +103,7 @@ body {
 }
 
 .sobre {
-  font-size: 15px;
+  font-size: 0.93rem;
   margin-top: 10px;
 }
 
@@ -133,12 +133,18 @@ body {
   flex-direction: column;
   width: 100%;
   height: 200px;
-  gap: 20px;
   padding: 0px;
   align-items: center;
   justify-content: center;
 }
 
+.organizar {
+  /* .organizar foi feito meramente para alinhar os icones e links ao centro usando o baseline */
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
 .i-link {
   /* Usando o align-itens vai alinhar o texto aos icones */
   display: flex;
@@ -161,14 +167,6 @@ body {
   50% {
     text-shadow: 0 0 6px #865355, 0px 0 12px #35191b;
   }
-}
-
-.organizar {
-  /* .organizar foi feito meramente para alinhar os icones e links ao centro usando o baseline */
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 20px;
 }
 
 .sublinhado {

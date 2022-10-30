@@ -71,8 +71,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   /*  cortei em 2 colunas para arrumar melhor */
-  height: 25%;
-  /* Deixando 32% para cada certificado */
   position: relative;
   /* Relative por conta dos adesivos */
   margin-bottom: 35px;
@@ -154,10 +152,3 @@
   border: 2px transparent solid;
 }
 /* apenas um detalhe para dar um sutil detalhe de botao  */
-
-@media (max-width: 1000px) {
-  .container {
-    display: none;
-  }
-
-}
