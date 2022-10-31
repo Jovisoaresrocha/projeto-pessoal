@@ -44,6 +44,7 @@ body {
   width: 65%; /* Define o resto do site ao lado direito*/
   height: 100%; /*  queremos altura 100% */
   padding: 10px;
+  
 }
 
 .lado-esquerdo .box {

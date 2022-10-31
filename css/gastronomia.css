@@ -13,6 +13,7 @@ body {
   width: 100vw;
   background-image: url(../img/fundo-certificado.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   overflow: hidden;
   display: flex;
