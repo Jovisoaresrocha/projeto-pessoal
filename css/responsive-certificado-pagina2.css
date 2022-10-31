@@ -93,5 +93,72 @@
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1024px) {
+  body {
+    width: 96vw;
+  }
+
+  .person .minha-foto {
+    width: 25%; /* antes era 30% */
+    height: 25%; /* antes era 30% */
+    margin: 0px; /* antes era 10px */
+    margin-top: 65px; /* antes era 40px */
+  }
+
+  .titulo {
+    margin-top: 25px; /* antes não tinha */
+    font-size: 1rem; /* antes era 1.7rem */
+  }
+
+  .sobre {
+    font-size: 0.7rem; /* antes era 0.93rem */
+    margin-top: 4px; /* antes era 10px */
+  }
+
+  /* Caixanihas de HTML, CSS E JS */
+
+  .caixinha {
+    height: 35px; /* antes era 60px */
+    margin-top: 10px; /* antes era 20px */
+    margin-left: 40px; /* antes era inexistente */
+  }
+
+  /* Botões de Linkedin, GitHub e Projetos */
+
+  .lista {
+    width: 80%; /* antes era 100% */
+    height: 150px; /* antes era 200px */
+  }
+
+  .organizar {
+    gap: 8px; /* antes era de 20px */
+  }
+
+  .i-link {
+    font-size: 1rem; /* antes era de 1.3rem */
+  }
+
+  .i-link img {
+    max-width: 25px; /* antes era de 35px */
+  }
+
+  /* LIVRO */
+
+  .tituloe,
+  .titulo2 {
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+  }
+  .gast,
+  .gast2,
+  .htmlcss,
+  .paragrafos,
+  .adesivo {
+    font-size: 0.8rem;
+  }
+  .livro .pagina.esquerda {
+    padding-left: 46px; /* antes era 40px */
+    padding-top: 175px; /* antes era  59px */
+    padding-right: 26px; /* antes era  32px */
+  }
 }

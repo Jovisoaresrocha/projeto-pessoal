@@ -82,7 +82,6 @@
     width: 30%; /* antes era 130px */
   }
 
-
   .livro .pagina {
     gap: 16px; /* antes era 16px */
   }
@@ -138,5 +137,143 @@
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1024px) {
+  body {
+    width: 96vw;
+  }
+
+
+  .person .minha-foto {
+    width: 25%; /* antes era 30% */
+    height: 25%; /* antes era 30% */
+    margin: 0px; /* antes era 10px */
+    margin-top: 65px; /* antes era 40px */
+  }
+
+  .titulo {
+    margin-top: 25px; /* antes não tinha */
+    font-size: 1rem; /* antes era 1.7rem */
+  }
+
+  .sobre {
+    font-size: 0.7rem; /* antes era 0.93rem */
+    margin-top: 4px; /* antes era 10px */
+  }
+
+  /* Caixanihas de HTML, CSS E JS */
+
+  .caixinha {
+    height: 35px; /* antes era 60px */
+    margin-top: 10px; /* antes era 20px */
+    margin-left: 40px; /* antes era inexistente */
+  }
+
+  /* Botões de Linkedin, GitHub e Projetos */
+
+  .lista {
+    width: 80%; /* antes era 100% */
+    height: 150px; /* antes era 200px */
+  }
+
+  .organizar {
+    gap: 8px; /* antes era de 20px */
+  }
+
+  .i-link {
+    font-size: 1rem; /* antes era de 1.3rem */
+  }
+
+  .i-link img {
+    max-width: 25px; /* antes era de 35px */
+  }
+
+
+  /* LIVRO */
+
+  .livro {
+    width: 850px; /* antes era 950px */
+    height: 606px; /* antes era 675x */
+    background-image: url(../img/LivroComissionSemLinha.png);
+    padding: 0px 0px 0px 0px; /* antes era 43px/53px/69px/40px */
+  }
+
+  .livro .pagina.esquerda {
+    padding-left: 60px; /* antes era 40px */
+    padding-top: 120px; /* antes era  59px */
+    padding-right: 26px; /* antes era  32px */
+  }
+  .tituloe,
+  .titulo2 {
+    margin-bottom: 4px;
+    font-size: 1.3rem; /* antes era 2rem */
+  }
+
+  .video-game {
+    width: 30%; /* antes era 130px */
+  }
+
+  .livro .pagina {
+    gap: 14px; /* antes era 16px */
+  }
+
+  /* PAGINA 2 CONTEUDO 😳 */
+
+  .livro .pagina.direita {
+    padding-top: 95px; /* antes era 31px */
+    padding-left: 40px; /* antes era 58px */
+    padding-right: 51px; /* antes era 10px */
+  }
+
+  .titulo2 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+
+  .divisaopagina {
+    padding-top: 0px; /* antes era 10px */
+    margin-bottom: 5px; /* antes era 35px */
+  }
+
+  .igast,
+  .ihtml {
+    /* imagem */
+    max-width: 100px; /* antes era 130px */
+  }
+
+  /* TODOS OS TEXTOS DOS LIVROS (sem titulo) */
+  .gast,
+  .gast2,
+  .htmlcss,
+  .paragrafos,
+  .adesivo {
+    font-size: 0.8rem; /* antes era 1rem */
+
+  }
+
+  .baixo {
+    margin-top: 10px;
+  }
+  .detalhe1,
+  .detalhe2 {
+    height: 60px; /* antes era 80px */
+    width: 60px; /* antes era 80px */
+  }
+
+  .detalhe1 {
+    right: -3px;
+    top: -15px;
+  }
+
+  .detalhe2 {
+    left: 1px;
+  }
+
+  /* ----- SETA ------ */
+
+  .d-seta {
+    margin-top: -10px;
+  }
+  .seta {
+    height: 30px; /* antes era 40px */
+  }
 }
